@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="Library.librarian.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="~/librarian/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            background-color:white;
+            border:2px solid black;
+            width: 14px;
+            height: 94px;
+        }
+        .auto-style2 {
+            background-color:purple;
+            border:2px solid black;
+            max-height: 55px;
+            
+        }
+        .menu {
+            
+            background-color:purple;
+            color:white;
+            height: 30px;
+        }
+        .link {
+            color:white;
+            margin-left:20px;
+        }                        
+        .auto-style4 {
+            height: 95px;
+        }
+        .btnmenu:active {
+            background-color: rgb(255, 216, 0);
+        }
+                        
+        
+                        
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    
+        <div class="header">
+                <table width="100%" class="auto-style3">
+                    <tr>
+                        <td class="auto-style1">
+                            <asp:Image class="auto-style4" runat="server" ImageUrl="~/img/kipm_logo.png"/>
+                        </td>
+                        <td class="auto-style2">
+                            <h2 style="text-align: center; color:white;">KIPM COLLEGE OF ENGINEERING AND TECHNOLOGY</h2>
+                            <h3 style="text-align:center; color:white;">GIDA, GORAKHPUR</h3>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+    
+        
+            <div id="menu">
+        <table width="100%" >
+            <tr>
+                <td class="tblhead">
+                    welcome
+                    </td>
+            </tr>
+            <tr>
+                <td bgcolor="#d9d9d9" style="text-align: center; background-color:white;">
+                    <asp:Label ID="lblUserLogin" runat="server" ForeColor="#000"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="adduser" runat="server" CssClass="btnmenu" Text="ADD USER" 
+                        PostBackUrl="~/librarian/AddUser.aspx" CausesValidation="False" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="addbook" runat="server" CssClass="btnmenu" Text="ADD BOOK" 
+                        PostBackUrl="~/librarian/addbooks.aspx" CausesValidation="False" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="addpublication" runat="server" CssClass="btnmenu" Text="ADD PUBLICATION" 
+                        PostBackUrl="~/librarian/addpublication.aspx" CausesValidation="False"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="addcourse" runat="server" CssClass="btnmenu" Text="ADD COURSE" 
+                        CausesValidation="False" PostBackUrl="~/librarian/addcourse.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="adddepartment" runat="server" CssClass="btnmenu" Text="ADD DEPARTMENT" 
+                        CausesValidation="False" PostBackUrl="~/librarian/adddepartment.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="addbranch" runat="server" CssClass="btnmenu" Text="ADD BRANCH" 
+                        PostBackUrl="~/librarian/addbranch.aspx" CausesValidation="False"  />
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    <asp:Button ID="facultyreport" runat="server" CssClass="btnmenu" Text="FACULTY'S" 
+                        PostBackUrl="~/librarian/facultyreport.aspx" CausesValidation="False" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="studentreport" runat="server" CssClass="btnmenu" 
+                        Text="STUDENT'S" CausesValidation="False" 
+                        PostBackUrl="~/librarian/studentreport.aspx"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="issuebook" runat="server" CssClass="btnmenu" Text="ISSUE BOOK" 
+                        CausesValidation="False" PostBackUrl="~/librarian/issuebook.aspx"   />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="books" runat="server" CssClass="btnmenu" 
+                        Text="BOOK'S" CausesValidation="False" 
+                        PostBackUrl="~/librarian/bookList.aspx"  />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="returnbook" runat="server" CssClass="btnmenu" Text="RETURN BOOK" 
+                        CausesValidation="False" PostBackUrl="~/librarian/returnbook.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="addusertype" runat="server" CssClass="btnmenu" Text="ADD USER TYPE" 
+                        CausesValidation="False" PostBackUrl="~/librarian/addusertype.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="logout" runat="server" CssClass="btnmenu" Text="LogOut" 
+                        CausesValidation="False" OnClick="logout_Click" />
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div id="detail" style="width:1255px">  
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
+
+              </div>
+        
+          
+     
+   
+    </form>
+</body>
+</html>

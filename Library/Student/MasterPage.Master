@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="Library.Student.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+    .auto-style1 {
+        background-color:white;
+        border:2px solid black;
+        width: 14px;
+        height: 94px;
+    }
+    .auto-style2 {
+        background-color:purple;
+        border:2px solid black;
+        max-height: 55px;
+        width: 925px;
+    }
+    .menu {
+        
+        background-color:purple;
+        color:white;
+        height: 30px;
+    }
+    .link {
+        color:white;
+        margin-left:20px;
+    }                        
+    .auto-style4 {
+        height: 95px;
+    }
+                    
+    
+                    
+</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="head">
+        <div class="header">
+        <table class="auto-style3">
+            <tr>
+                <td class="auto-style1">
+                    <asp:Image class="auto-style4" runat="server" ImageUrl="~/img/kipm_logo.png"/>
+                </td>
+                <td class="auto-style2">
+                    <h2 style="text-align: center; color:white;">KIPM COLLEGE OF ENGINEERING AND TECHNOLOGY</h2>
+                    <h3 style="text-align:center; color:white;">GIDA, GORAKHPUR</h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    </div><div id="main"><div id="menu">
+        <table style="" class="menutbl">
+            <tr>
+                <td class="tblhead">
+                    welcome
+                    </td>
+            </tr>
+            <tr>
+                <td style="text-align: center">
+                    <!--<asp:Image ID="Image2" runat="server" Height="116px" Width="117px" />-->
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center">
+                    <asp:Label ID="lblUserLogin" runat="server" Font-Bold="True" ForeColor="Red"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button11" runat="server" CssClass="btnmenu" Text="MY PROFILE" 
+                        PostBackUrl="~/Student/myprofile.aspx" CausesValidation="False" 
+                         />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button1" runat="server" CssClass="btnmenu" Text="ISSUED BOOK'S" 
+                        PostBackUrl="~/Student/issuedBook.aspx" CausesValidation="False" />
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <asp:Button ID="Button12" runat="server" CssClass="btnmenu" Text="BOOK'S LIST" 
+                        CausesValidation="False" PostBackUrl="~/Student/books.aspx" />
+                </td>
+            </tr>
+            <tr>
+                
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button4" runat="server" CssClass="btnmenu" Text="LOGOUT" 
+                        CausesValidation="False" OnClick="logout_Click"  />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center">
+                    <asp:Image ID="Image3" runat="server" Height="139px" ImageUrl="~/img/kipm.jpg" 
+                        Width="142px" />
+                </td>
+            </tr>
+            </table>
+        </div><div id="detail">  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></div></div>
+     
+   
+    </form>
+</body>
+</html>

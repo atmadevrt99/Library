@@ -1,0 +1,134 @@
+﻿body 
+{background:#FFF;
+    font-family:Verdana;
+    /*CCFFCC*/
+}
+
+
+#head
+{
+    width:1000px;
+    height:100px;
+    border:solid 1px white;
+   /* box-shadow:0px 0px 15px 0px green;*/
+    margin:0 auto;
+    text-align: center;
+    background:#fff;
+}
+
+#login
+{
+    height:320px;
+    width:350px;
+    border:solid 0px green;
+    margin:0 auto;
+    margin-top:120px;
+    
+    }
+    
+    .tbl
+    {
+        width:100%;
+        border:solid 1px WHITE;
+        
+        background:#FFF;
+        }
+        
+        .tblhead
+        {
+            background:purple;
+            color:#fff;
+            text-align:center;
+            font-weight:bold;
+            height:30px;
+            
+            }
+            
+       .lbl
+       {
+           text-align:right;
+           color:black;
+           }
+           
+           .txt
+           {
+               height:20px;
+               width:150px;
+               border:solid 1px #bfbfbf;
+               background:#EAEAEA;
+               }
+               .txt:hover
+           {
+               
+               border:solid 1px #7d0000;
+               }
+               
+               .btn:hover
+               {
+                   background:black;
+                   color:#fff;
+                   font-weight:bold;
+                    border:solid 2px #000;
+                   height:30px;
+                   }
+                   .btn
+               {
+                   background:#910000;
+                   color:#fff;
+                   font-weight:bold;
+                   border:solid 2px #aeaeae;height:30px;
+                   cursor:pointer;
+                   }
+ 
+#main
+{
+    width:1000px;
+    height:550px;
+    border:solid 1px #cacaca;
+   /* box-shadow:0px 0px 15px 0px green;*/
+    margin:0 auto;
+   
+      background:#fff;
+}
+
+#menu
+{
+    width:230px;
+    height:550px;
+    border:solid 0px red;
+    float:left;
+     background:#fff;
+    }
+.menutbl {
+    width: 100%;
+    border-right-style: solid;
+    border-right-width: thin;
+    border-right-color: #cacaca;
+}
+
+
+.btnmenu {
+    background: purple;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+                   .btnmenu:hover
+               {
+                   background:#730101;
+                   color:#fff;
+                   font-weight:bold;
+                   transition: background-color .6s ease;
+
+                   }
+#detail {
+    width: 750px;
+    height: 550px;
+    border: solid 0px red;
+    float: left;
+    margin-left: 5px;
+    background: #fff;
+}
